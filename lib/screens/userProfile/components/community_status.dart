@@ -26,7 +26,7 @@ class CommunityStatus extends StatelessWidget {
       padding: const EdgeInsets.all(20.0),
       child: Column(
         children: [
-          _showUpNetworkInfo('Who viewd your profile', 272),
+          _showUpNetworkInfo('Who viewed your profile', 272),
           SizedBox(height: 20),
           _showUpNetworkInfo('Connections', 352),
           SizedBox(height: 2),
