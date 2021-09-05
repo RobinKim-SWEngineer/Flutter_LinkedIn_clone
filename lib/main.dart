@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:linkedin_clone/screens/home/home.dart';
 import 'package:linkedin_clone/screens/userProfile/intro_profile.dart';
 
 void main() {
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: IntroProfile(),
+      home: Home(),
     );
   }
 }
