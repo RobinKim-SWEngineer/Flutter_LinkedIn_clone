@@ -2,19 +2,31 @@ import 'package:flutter/material.dart';
 
 const HANDSOME_ME = 'assets/images/handsome_me.png';
 
-class HeaderLayer extends StatefulWidget {
+class HeaderLayer extends StatefulWidget implements PreferredSizeWidget {
   HeaderLayer({Key? key}) : super(key: key);
 
   @override
   _HeaderLayerState createState() => _HeaderLayerState();
+
+  @override
+  Size get preferredSize => const Size.fromHeight(70);
 }
 
 class _HeaderLayerState extends State<HeaderLayer> {
   @override
+  void initState() {
+    super.initState();
+  }
+
+  @override
   Widget build(BuildContext context) {
     Size _screenSize = MediaQuery.of(context).size;
     return Padding(
-      padding: const EdgeInsets.only(left: 15.0, right: 15, top: 15),
+      padding: const EdgeInsets.only(
+        left: 15.0,
+        right: 15,
+        top: 15,
+      ),
       child: Row(
         children: [
           SizedBox(
@@ -24,7 +36,10 @@ class _HeaderLayerState extends State<HeaderLayer> {
           Expanded(
             child: Container(
               padding: EdgeInsets.all(10),
-              margin: EdgeInsets.only(left: 10, right: 10),
+              margin: EdgeInsets.only(
+                left: 10,
+                right: 10,
+              ),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.all(
                   Radius.circular(10),

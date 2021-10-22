@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:linkedin_clone/screens/home/home.dart';
-import 'package:linkedin_clone/screens/userProfile/intro_profile.dart';
+import 'package:linkedin_clone/screens/bottomNavigation/bottom_navigation_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -14,7 +13,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: Home(),
+      home: BottomNavigationScreen(),
     );
   }
 }
